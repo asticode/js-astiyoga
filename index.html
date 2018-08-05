@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yin yoga</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="lib/fontawesome-free-5.1.0-web/css/all.css"/>
+</head>
+<body>
+    <!-- Content -->
+    <table>
+        <tr id="controls">
+            <td>
+                <i class="fa fa-play" onclick="yoga.handlePlay(true)" id="fa-play"></i>
+                <i class="fa fa-redo" onclick="yoga.handleRetry()"></i>
+            </td>
+        </tr>
+        <tr id="exercises">
+            <td>
+                <table>
+                    <tr>
+                        <td class="exercise"></td>
+                        <td class="exercise"></td>
+                        <td class="exercise"></td>
+                        <td class="exercise"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr id="history">
+            <td>
+                <table>
+                    <tr>
+                        <td class="history"></td>
+                        <td class="history"></td>
+                        <td class="history"></td>
+                        <td class="history"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Libs -->
+    <script src="lib/progressbar-1.0.1/progressbar.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/yoga.js"></script>
+    <script>
+        yoga.init();
+    </script>
+</body>
+</html>

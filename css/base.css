@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+a, a:visited {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table, tr {
+    height: 100%;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#controls {
+    height: 20%;
+}
+
+#exercises {
+    height: 60%;
+}
+
+#history {
+    height: 20%;
+}
+
+.fa {
+    color: #fff;
+    cursor: pointer;
+}
+
+#controls .fa {
+    font-size: 2em;
+    margin: 0 0.5em;
+}
+
+.exercise, .history {
+    width: 25%;
+}
+
+select {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    text-align-last: center;
+}
+
+.history {
+    font-size: 0.8em;
+    font-style: italic;
+    vertical-align: top;
+}

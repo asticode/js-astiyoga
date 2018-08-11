@@ -254,6 +254,22 @@ const yoga = {
             }
         }
         yoga.history[idx][yoga.history[idx].length - 1] = yoga.exercises[idx];
+        let previous
+        for (let a = 0; a < yoga.history[0].length; a++) {
+            let actual = []
+            for (let b = 0; b < 4; b++) {
+                if (yoga.history[b][a].label !== "&nbsp") {
+                    actual.push(yoga.history[b][a].label)
+                }
+            }
+            if (previous && actual.join(";") === previous) {
+                for (let b = 0; b < 4; b++) {
+                    yoga.history[b].splice(a-1, 1)
+                }
+                a--
+            }
+            previous = actual.join(";")
+        }
         yoga.storage.save();
     }
 };
